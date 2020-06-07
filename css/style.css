@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    background-color: #ff4757;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.clock{
+    display: flex;
+}
+.clock div{
+    position: relative;
+    margin: 0 5px;
+    width: 200px;
+    height: 240px;
+}
+
+.clock div p{
+    position: relative;
+    background-color: #7bed9f;
+    z-index: 1;
+    box-shadow: 0px 34px 45px 0px rgba(0, 0, 0, 0.56);
+
+    width: 190px;
+    height: 160px;
+    border: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.clock div p:first-child{
+    font-family: cursive;
+    font-size: 70px;
+    font-weight: 400;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #57606f;
+    border-radius: 20px 20px 0px 0px;
+}
+.clock div p:last-child{
+    height: 80px;
+    font-family: cursive;
+    font-weight: 200;
+    font-size: 25px;
+    color: #2f3542;
+    font-weight: 700;
+    background-color: #2ed573;
+    border-radius: 0 0 20px 20px;
+}
+.clock div:last-child p:first-child{
+    background-color: #57606f;
+    color: #ced6e0;
+}
+.clock div:last-child p:last-child{
+    background-color: #2f3542;
+    color: #ced6e0;
+}
